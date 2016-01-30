@@ -1,0 +1,60 @@
+#############################################
+#		INSERT LOCATION INDIVIDUAL
+#		District 				(Kabupaten)
+#		Kecamatan				(Sub-district)
+#		Desa adat/pekraman		(Village)
+#		Banjar
+#############################################
+
+#############################################
+###  	INSERT BANJAR
+###  	NamaBanjar ex. BanjarAdatBendul 
+###  	NamaWilayahDiatasnya bisa Desa adat/pekraman, Kecamatan, Kabupaten.  
+###		Sangat tergantung dari input yang diberikan.  Apabila input yang diberikan lengkap maka tuliskan semuanya
+#############################################
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaBanjarAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaBanjarAdat> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ,
+                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                          owl:NamedIndividual ;
+###  	Merupakan bagian dari Bali, Kabupaten, Kecamatan, DesaAdat/Pekraman
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaKabupaten> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaKecamatan> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaDesaAdatl> .
+
+#############################################
+###  	INSERT DESA ADAT/PEKRAMAN
+###  	NamaBanjar ex. DesaAdatUbud 
+###  	NamaWilayahDiatasnya bisa Kecamatan, Kabupaten.  
+###		Sangat tergantung dari input yang diberikan.  Apabila input yang diberikan lengkap maka tuliskan semuanya
+#############################################
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaDesaAdat/Pekraman
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaDesaAdat/Pekraman> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ,
+                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                        owl:NamedIndividual ;
+###  	Merupakan bagian dari Bali, Kabupaten, Kecamatan                                                               
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan> .
+                                                                                                                        
+#############################################
+###  	INSERT KECAMATAN
+###  	NamaBanjar ex. DesaAdatUbud 
+###  	NamaWilayahDiatasnya bisa Kabupaten.  
+###		Sangat tergantung dari input yang diberikan.  Apabila input yang diberikan lengkap maka tuliskan semuanya
+#############################################
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaKecamatan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#NamaKecamatan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan> ,
+                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                        owl:NamedIndividual ;
+###  	Merupakan bagian dari Bali, Kabupaten                                                              
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> .
+                                                                                                          
+                                                                                                                                                                                                                                                 

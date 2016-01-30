@@ -1,0 +1,2355 @@
+@prefix : <http://dpch.oss.web.id/Bali/TriHitaKarana.owl##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#> .
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#> rdf:type owl:Ontology ;
+                                                 
+                                                 <http://protege.stanford.edu/webprotege/revision> 16 ,
+                                                                                                   21 ;
+                                                 
+                                                 <http://purl.org/dc/elements/1.1/date> "24/06/2015 12:18:21 PM"^^xsd:dateTime ;
+                                                 
+                                                 rdfs:comment "Balinese Tri Hita Karana"^^xsd:string ;
+                                                 
+                                                 <http://purl.org/dc/elements/1.1/creator> "Cokorda Rai Adi Pramartha"^^xsd:string ;
+                                                 
+                                                 <http://purl.org/dc/elements/1.1/date> "Jun 10, 2015 9:42:14 PM"^^xsd:dateTime .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Images
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Images> rdfs:label "Images"@en ,
+                                                                  "Gambar"@id .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P2_Place
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P2_Place> rdfs:label "isConsistOf"@en .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Activity
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasActivity
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasActivity> rdf:type owl:ObjectProperty ;
+                                                            
+                                                            rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ;
+                                                            
+                                                            rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Activity> ;
+                                                            
+                                                            owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isActivityOf> ;
+                                                            
+                                                            rdfs:domain owl:Thing ;
+                                                            
+                                                            rdfs:subPropertyOf [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Activity>
+                                                                               ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasBendesa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasBendesa> rdf:type owl:InverseFunctionalProperty ,
+                                                                    owl:ObjectProperty ;
+                                                           
+                                                           rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> ,
+                                                                              [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor>
+                                                                              ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> rdf:type owl:ObjectProperty ;
+                                                               
+                                                               rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> ,
+                                                                                  [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf>
+                                                                                  ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasDimension
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasDimension> rdf:type owl:ObjectProperty ;
+                                                             
+                                                             rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ;
+                                                             
+                                                             rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                             
+                                                             rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasFunction
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasFunction> rdf:type owl:ObjectProperty ;
+                                                            
+                                                            rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ;
+                                                            
+                                                            rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                            
+                                                            rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasIntonation
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasIntonation> rdf:type owl:ObjectProperty ;
+                                                              
+                                                              rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> ;
+                                                              
+                                                              rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                              
+                                                              rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKelian
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKelian> rdf:type owl:ObjectProperty ;
+                                                          
+                                                          rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> ;
+                                                          
+                                                          owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isKelianOf> ;
+                                                          
+                                                          rdfs:subPropertyOf [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor>
+                                                                             ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKing
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKing> rdf:type owl:ObjectProperty ;
+                                                        
+                                                        rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> ;
+                                                        
+                                                        rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Puri> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKrama
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKrama> rdf:type owl:ObjectProperty ;
+                                                         
+                                                         rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKulkul> rdf:type owl:ObjectProperty ;
+                                                          
+                                                          rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                          
+                                                          rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> ;
+                                                          
+                                                          rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                          
+                                                          owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isInstalledIn> ;
+                                                          
+                                                          rdfs:subPropertyOf [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing>
+                                                                             ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasPart
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasPart> rdf:type owl:ObjectProperty ;
+                                                        
+                                                        rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BagianKulkul> ;
+                                                        
+                                                        rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                        
+                                                        rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasType
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasType> rdf:type owl:ObjectProperty ;
+                                                        
+                                                        rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                        
+                                                        rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> ;
+                                                        
+                                                        rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isActivityOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isActivityOf> rdf:type owl:ObjectProperty ;
+                                                             
+                                                             rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Activity> ,
+                                                                                [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Activity>
+                                                                                ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isBendesaOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isBendesaOf> rdf:type owl:FunctionalProperty ,
+                                                                     owl:ObjectProperty ;
+                                                            
+                                                            rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bendesa> ;
+                                                            
+                                                            rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ;
+                                                            
+                                                            rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> ;
+                                                            
+                                                            owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasBendesa> ;
+                                                            
+                                                            rdfs:subPropertyOf [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor>
+                                                                               ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> rdf:type owl:ObjectProperty ;
+                                                                
+                                                                owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> ;
+                                                                
+                                                                rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> ,
+                                                                                   [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf>
+                                                                                   ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isInstalledIn
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isInstalledIn> rdf:type owl:ObjectProperty ;
+                                                              
+                                                              rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                              
+                                                              rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> ;
+                                                              
+                                                              rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                              
+                                                              rdfs:subPropertyOf [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing>
+                                                                                 ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isKelianOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isKelianOf> rdf:type owl:ObjectProperty ;
+                                                           
+                                                           rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ;
+                                                           
+                                                           rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelian> ;
+                                                           
+                                                           rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> ,
+                                                                              [ owl:inverseOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor>
+                                                                              ] .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isMadeOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isMadeOf> rdf:type owl:ObjectProperty ;
+                                                         
+                                                         rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ;
+                                                         
+                                                         rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ;
+                                                         
+                                                         rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> rdf:type owl:ObjectProperty ,
+                                                                  owl:TransitiveProperty ;
+                                                         
+                                                         rdfs:label "isPartOf"@en ;
+                                                         
+                                                         rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                         
+                                                         rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfBanjar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfBanjar> rdf:type owl:ObjectProperty ;
+                                                               
+                                                               rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ;
+                                                               
+                                                               rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                               
+                                                               rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfDesa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfDesa> rdf:type owl:ObjectProperty ;
+                                                             
+                                                             rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ;
+                                                             
+                                                             rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ;
+                                                             
+                                                             rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfKabupaten
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfKabupaten> rdf:type owl:ObjectProperty ;
+                                                                  
+                                                                  rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                                  
+                                                                  rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ;
+                                                                  
+                                                                  rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfKecamatan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOfKecamatan> rdf:type owl:ObjectProperty ;
+                                                                  
+                                                                  rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ;
+                                                                  
+                                                                  rdfs:range <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan> ;
+                                                                  
+                                                                  rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#diameter
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#diameter> rdf:type owl:DatatypeProperty ;
+                                                         
+                                                         rdfs:comment "Ukuran diameter kulkul dalam sentimeter"@id ;
+                                                         
+                                                         rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ;
+                                                         
+                                                         rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiUkuran> ;
+                                                         
+                                                         rdfs:range xsd:integer .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#image
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#image> rdf:type owl:DatatypeProperty ,
+                                                               owl:FunctionalProperty ;
+                                                      
+                                                      rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKelentungan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKelentungan> rdf:type owl:DatatypeProperty ;
+                                                                  
+                                                                  rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKelentunganLambat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKelentunganLambat> rdf:type owl:DatatypeProperty ;
+                                                                        
+                                                                        rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKulkulTerpasang
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahKulkulTerpasang> rdfs:comment "Jumlah kulkul yang dipasang ditiap-tiap lokasi"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludAlon
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludAlon> rdf:type owl:DatatypeProperty ;
+                                                                
+                                                                rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludBanban
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludBanban> rdf:type owl:DatatypeProperty ;
+                                                                  
+                                                                  rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludBulus
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#jumlahTuludBulus> rdf:type owl:DatatypeProperty ;
+                                                                 
+                                                                 rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiIntonasi
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiUkuran
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaBelakang
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaBelakang> rdf:type owl:DatatypeProperty ;
+                                                             
+                                                             rdfs:label "lastName"@en ,
+                                                                        "namaBelakang"@id ;
+                                                             
+                                                             rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                             
+                                                             rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> ;
+                                                             
+                                                             rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaDepan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaDepan> rdf:type owl:DatatypeProperty ;
+                                                          
+                                                          rdfs:label "firstName"@en ,
+                                                                     "namaDepan"@id ;
+                                                          
+                                                          rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                          
+                                                          rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> ;
+                                                          
+                                                          rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> rdf:type owl:DatatypeProperty ;
+                                                          
+                                                          rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                          
+                                                          rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaPanggilan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaPanggilan> rdf:type owl:DatatypeProperty ;
+                                                              
+                                                              rdfs:label "nickName"@en ,
+                                                                         "namaPanggilan"@id ;
+                                                              
+                                                              rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                              
+                                                              rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> ;
+                                                              
+                                                              rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaTengah
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaTengah> rdf:type owl:DatatypeProperty ;
+                                                           
+                                                           rdfs:label "middleName"@en ,
+                                                                      "namaTengah"@id ;
+                                                           
+                                                           rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                           
+                                                           rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> ;
+                                                           
+                                                           rdfs:range xsd:string .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#periodeJabatan
+
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#tinggi
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#tinggi> rdf:type owl:DatatypeProperty ;
+                                                       
+                                                       rdfs:comment "Tinggi dari kulkul dalam sentimeter"@id ;
+                                                       
+                                                       rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ;
+                                                       
+                                                       rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#memilikiUkuran> ;
+                                                       
+                                                       rdfs:range xsd:integer .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#titleName
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#titleName> rdf:type owl:DatatypeProperty ;
+                                                          
+                                                          rdfs:label "Nama Gelar"@id ;
+                                                          
+                                                          rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#waktuAkhir
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#waktuAkhir> rdf:type owl:DatatypeProperty ;
+                                                           
+                                                           rdfs:comment "Waktu akhir menjabat menjadi kelian adat maupun bendesa adat"@id ;
+                                                           
+                                                           rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                           
+                                                           rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#periodeJabatan> ;
+                                                           
+                                                           rdfs:range xsd:dateTime .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#waktuMulai
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#waktuMulai> rdf:type owl:DatatypeProperty ;
+                                                           
+                                                           rdfs:comment "Waktu mulai menjadi kelian adat maupun bendesa adat"@id ;
+                                                           
+                                                           rdfs:domain <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                           
+                                                           rdfs:subPropertyOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#periodeJabatan> ;
+                                                           
+                                                           rdfs:range xsd:dateTime .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:label "Activity"@en ,
+                                                                    "Aktivitas"@id ;
+                                                         
+                                                         rdfs:subClassOf owl:Thing .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor> rdfs:label "Actor"@en ,
+                                                                 "Aktor"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#AwalDigunakan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#AwalDigunakan> rdf:type owl:Class ;
+                                                              
+                                                              rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> ;
+                                                              
+                                                              rdfs:comment "Kelas ini menjelaskan tentang waktu saat kulkul resmi dapat digunakan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#AwalDigunakanKembali
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#AwalDigunakanKembali> rdf:type owl:Class ;
+                                                                     
+                                                                     rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> ;
+                                                                     
+                                                                     rdfs:comment "Kelas ini menjelaskan tentang waktu saat kulkul mulai digunakan kembali setelah dilakukan perbaikan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BagianKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BagianKulkul> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:label "KulkulPart"@en ,
+                                                                        "BagianKulkul"@id ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaleKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaleKulkul> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bambu
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bambu> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banban
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banban> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:label "Banjar"@bb ;
+                                                       
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( [ rdf:type owl:Class ;
+                                                                                             owl:intersectionOf ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat>
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKelian> ;
+                                                                                                                    owl:someValuesFrom <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelian>
+                                                                                                                  ]
+                                                                                                                )
+                                                                                           ]
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasKrama> ;
+                                                                                             owl:someValuesFrom <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaBanjarAdat>
+                                                                                           ]
+                                                                                         )
+                                                                           ] ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banten
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banten> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bendesa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bendesa> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                        
+                                                        rdfs:comment "Kelas ini terdiri dari nama-nama orang yang menjabat sebagai Bedesa Desa Adat atau Pakraman"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BhutaYadnya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BhutaYadnya> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Palemahan> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ;
+                                                            
+                                                            owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DewaYadnya> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya> ;
+                                                            
+                                                            rdfs:comment "Kelas ini terdiri yadnya yang dilakukan kepada para Bhuta Kala yang bertujuan untuk menetralisir kekuatan alam sehingga menjadi harmonis."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bulus
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bulus> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:label "Desa"@id ;
+                                                     
+                                                     rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DewaYadnya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DewaYadnya> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parahyangan> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ;
+                                                           
+                                                           owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya> ;
+                                                           
+                                                           rdfs:comment "Kelas ini terdiri dari yadnya yang dilakukan kehadapan Ida Sang Hyang Widhi Wasa."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> rdf:type owl:Class ;
+                                                              
+                                                              rdfs:label "KulkulDimension"@en ,
+                                                                         "DimensiKulkul"@id ;
+                                                              
+                                                              rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:label "KulkulFunction"@en ,
+                                                                        "FungsiKulkul"@id ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:label "CapitalCity"@en ,
+                                                                   "IbuKota"@id ;
+                                                        
+                                                        rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:label "KulkulIntonation"@en ,
+                                                                          "IntonasiKulkul"@id ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:label "District"@en ,
+                                                                     "Kabupaten"@id ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:label "Kecamatan"@id ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelian
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelian> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                       
+                                                       rdfs:comment "Kelas ini terdiri dari nama-nama orang yang menjabat sebagai Kelian Banjar Adat"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:label "Group"@en ,
+                                                                    "Kelompok"@id ;
+                                                         
+                                                         rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kesinoman
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kesinoman> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:label "Kesinoman"@ban ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KesinomanBanjarAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KesinomanBanjarAdat> rdf:type owl:Class ;
+                                                                    
+                                                                    rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kesinoman> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KesinomanDesaAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KesinomanDesaAdat> rdf:type owl:Class ;
+                                                                  
+                                                                  rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kesinoman> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klentungan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klentungan> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaBanjarAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaBanjarAdat> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:label "KramaBanjarAdat"@ban ;
+                                                                
+                                                                rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaDesaAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaDesaAdat> rdf:type owl:Class ;
+                                                              
+                                                              rdfs:label "KramaDesaAdat"@ban ;
+                                                              
+                                                              owl:equivalentClass <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaDesaPekraman> ;
+                                                              
+                                                              rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaDesaPekraman
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KramaDesaPekraman> rdf:type owl:Class ;
+                                                                  
+                                                                  rdfs:label "KramaDesaPekraman"@ban ;
+                                                                  
+                                                                  rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:label "Kulkul"@en ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBanjarAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBanjarAdat> rdf:type owl:Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> ;
+                                                                 
+                                                                 owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBhuta> ,
+                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> ,
+                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> ,
+                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBhuta
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBhuta> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Palemahan> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> ;
+                                                            
+                                                            owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDesaAdat> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulHiasan> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDesaAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDesaAdat> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> ;
+                                                               
+                                                               owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parahyangan> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> ;
+                                                           
+                                                           owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulHiasan> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulHiasan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulHiasan> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> ;
+                                                             
+                                                             owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> ;
+                                                             
+                                                             owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan> rdf:type owl:Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> ;
+                                                                 
+                                                                 rdfs:comment "Merupakan kulkul yang dikeramatkan dan umumnya dipasang di Puri Kerajaan."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDalem> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan> ;
+                                                                
+                                                                owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> ,
+                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> ,
+                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraDesa> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan> ;
+                                                               
+                                                               owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuraPuseh> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa> ,
+                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan> ;
+                                                                
+                                                                owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> ,
+                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> ,
+                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuri
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPuri> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:label "KulkulPuri"@ban ,
+                                                                      "KulkulKerajaan"@id ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulPejenengan> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSekaa> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSiskamling> rdf:type owl:Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulTempekan> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManMadeThing
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManMadeThing> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:label "ManMadeThing"@en ,
+                                                                        "Tukang"@id ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                             
+                                                             rdfs:comment "This class use for identify man-made physical things."@en ,
+                                                                          "Group ini terdiri atas tukang-tukang pembuat alat seperti kulkul, rumah, dll."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangku
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangku> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                       
+                                                       owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pedanda> ;
+                                                       
+                                                       rdfs:comment "Lay Priest"@en ,
+                                                                    "Kelas ini terdiri dari nama-nama orang yang bertindak sebagai Mangku di Pura"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> rdf:type owl:Class ;
+                                                             
+                                                             rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ;
+                                                             
+                                                             owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya> ;
+                                                             
+                                                             rdfs:comment "Kelas ini terdiri dari  yadnya yang dilakukan kepada sesama manusia."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:label "KulkulMaterial"@en ,
+                                                                          "MaterialKulkul"@id ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MerajanKawitan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MerajanKawitan> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura> ;
+                                                               
+                                                               rdfs:comment "Class ini terdiri atas nama-nama kawitan/pusat. Contoh: Pasek."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:label "Person"@en ,
+                                                                 "Orang"@id ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Palemahan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Palemahan> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ;
+                                                          
+                                                          rdfs:comment "Hubungan manusia dengan alam lingkungannya"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parahyangan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parahyangan> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ;
+                                                            
+                                                            rdfs:comment "Hubungan manusia dengan Tuhan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pasek
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pasek> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:label "Pasek"@ban ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> ;
+                                                      
+                                                      rdfs:comment "Terdiri atas nama-nama kelompok pasek di Bali"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ;
+                                                         
+                                                         rdfs:comment "Hubungan manusia dengan sesamanya"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pedanda
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pedanda> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ;
+                                                        
+                                                        rdfs:comment "High Priest"@en ,
+                                                                     "Kelas ini terdiri dari nama-nama orang yang menjabat sebagai Pedanda"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pembuatan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pembuatan> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> ;
+                                                          
+                                                          rdfs:comment "Kelas ini menjelaskan tentang waktu saat kulkul mulai dibuat"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Perbaikan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Perbaikan> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> ;
+                                                          
+                                                          rdfs:comment "Kelas ini menjelaskan tentang waktu saat kulkul mulai diperbaiki"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pergantian
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pergantian> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> ;
+                                                           
+                                                           rdfs:comment "Kelas ini menjelaskan tentang waktu saat kulkul diganti"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Periode> rdfs:comment "Period"@en ,
+                                                                     "Periode"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> rdfs:label "PhysicalThing"@en ,
+                                                                         "HalFisik"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ;
+                                                            
+                                                            owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya> ;
+                                                            
+                                                            rdfs:comment "Kelas ini terdiri dari yadnya yang dilakukan kepada para roh leluhur termasuk kepada orang tua yang masih hidup"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prajuru
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prajuru> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PrajuruBanjarAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PrajuruBanjarAdat> rdf:type owl:Class ;
+                                                                  
+                                                                  rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prajuru> ;
+                                                                  
+                                                                  rdfs:comment "Kelas ini terdiri dari nama-nama orang yang menjabat sebagai Prajuru Banjar Adat"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PrajuruDesaAdat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PrajuruDesaAdat> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prajuru> ;
+                                                                
+                                                                rdfs:comment "Kelas ini terdiri dari nama-nama orang yang menjabat sebagai Prajuru Desa Adat"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:label "Temple"@en ,
+                                                                "Pura"@id ;
+                                                     
+                                                     rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parahyangan> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDalem
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDalem> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKahyanganTiga> ;
+                                                          
+                                                          owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDesa> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraPuseh> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDesa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDesa> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:label "PuraBaleAgung"@bb ;
+                                                         
+                                                         rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKahyanganTiga> ;
+                                                         
+                                                         owl:disjointWith <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraPuseh> ;
+                                                         
+                                                         rdfs:comment "Pura yang merupakan tempat pemujaan Tuhan dalam prabawanya sebagai Brahma sang pencipta (Utpati)"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKahyanganTiga
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKahyanganTiga> rdf:type owl:Class ;
+                                                                  
+                                                                  rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKawitan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKawitan> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraPuseh
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraPuseh> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraKahyanganTiga> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraSubak
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraSubak> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Puri
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Puri> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:label "PancaMahaYadnya"@bb ,
+                                                                  "PancaYadnya"@en ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ;
+                                                       
+                                                       rdfs:comment "Lima jenis karya/persembahan suci yang diselenggarakan oleh umat Hindu untuk mencapai kesempurnaan hidup"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ;
+                                                          
+                                                          rdfs:comment "Kelas ini terdiri dari yadnya yang dilakukan kepada para rsi atas jasa-jasa dia membina umat dan mengembangkan ajaran agama."@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sekaa
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sekaa> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:label "Sekaa"@ban ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaGong
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaGong> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:label "SekaaGong"@ban ;
+                                                          
+                                                          rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sekaa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaSubak
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaSubak> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:label "SekaaSubak"@ban ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sekaa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaTrunaTruni
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#SekaaTrunaTruni> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:label "SekaaTrunaTruni"@ban ;
+                                                                
+                                                                rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sekaa> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Subak
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Subak> rdf:type owl:Class ;
+                                                      
+                                                      rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> rdfs:label "Genah"@ban ,
+                                                                  "Place"@en ,
+                                                                  "Tempat"@id ;
+                                                       
+                                                       rdfs:comment "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter."@en .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempek
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempek> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:label "Tempek"@bb ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kelompok> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TipeKulkul> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:label "KulkulType"@en ,
+                                                                      "TipeKulkul"@id ;
+                                                           
+                                                           rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> rdfs:comment "The fundamental concept of Balinese Hindu"@en ,
+                                                                           "Konsep dasar orang Bali hindu"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tuludan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tuludan> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IntonasiKulkul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Undagi
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Undagi> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManMadeThing> ;
+                                                       
+                                                       rdfs:comment "Kelas ini terdiri dari nama-nama pembuat segala bentuk obyek kasat mata di Bali"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Amlapura
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Amlapura> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                  owl:NamedIndividual ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Amlapura> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                owl:NamedIndividual ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangunpura> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangunpura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                              owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                     owl:NamedIndividual ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTengah
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTengah> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliUtara
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliUtara> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Island> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bambu
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bambu> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                               owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                owl:NamedIndividual ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTengah> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaBangli> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaBangli> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BanjarAdatBendul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BanjarAdatBendul> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ,
+                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                          owl:NamedIndividual ;
+                                                                 
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuriKlungkung> ,
+                                                                                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BanjarAdatKertalangu
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BanjarAdatKertalangu> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banjar> ,
+                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                              owl:NamedIndividual ;
+                                                                     
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ,
+                                                                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DenpasarTimur> ,
+                                                                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaKesiman> ,
+                                                                                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BendesaAdatBendul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BendesaAdatBendul> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bendesa> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ,
+                                                                           owl:NamedIndividual ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaBelakang> "Manly"^^xsd:string ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> "Manly"^^xsd:string ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaDepan> "Nyoman"^^xsd:string ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#namaOrang> "Nyoman"^^xsd:string ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#image> "http://balipost.com/content/uploads/2014/11/sumatika/21/balipost_bendesa-adat-gelgel-nyoman-puspa2111.jpg"^^xsd:string ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isBendesaOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul> ;
+                                                                  
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                  owl:NamedIndividual ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliUtara> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Singaraja> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Singaraja> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Caru
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Caru> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banten> ,
+                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                              owl:NamedIndividual ;
+                                                     
+                                                     rdfs:comment "Kurban untuk mahkluk yang lebih rendah dari manusia"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                  owl:NamedIndividual ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DenpasarTimur
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DenpasarTimur> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kecamatan> ,
+                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                       owl:NamedIndividual ;
+                                                              
+                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBatuan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBatuan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ,
+                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ,
+                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                        owl:NamedIndividual ;
+                                                               
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ;
+                                                               
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasBendesa> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BendesaAdatBendul> ;
+                                                               
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#P_Actor> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BendesaAdatBendul> ;
+                                                               
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ,
+                                                                                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaKesiman
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaKesiman> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Desa> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                     owl:NamedIndividual ;
+                                                            
+                                                            rdfs:label "DesaAdatKesiman" ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DenpasarTimur> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar> ,
+                                                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaGianyar> ;
+                                                        
+                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaGianyar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                  owl:NamedIndividual ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat> ,
+                                                                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Negara> ;
+                                                         
+                                                         <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Negara> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Amlapura> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Amlapura> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuCamplung
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuCamplung> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                      owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuIntaranGading
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuIntaranGading> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuJati
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuJati> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                  <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                  owl:NamedIndividual ;
+                                                         
+                                                         rdfs:label "TeakWood"@en ,
+                                                                    "KayuJati"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuNangka
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuNangka> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           rdfs:label "JackfruitWood"@en ,
+                                                                      "KayuNangka"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuSiligui
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KayuSiligui> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kayu> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                     owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ,
+                                                                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaBangli
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaBangli> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTengah> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaBangli> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                      owl:NamedIndividual ;
+                                                             
+                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ;
+                                                             
+                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar> ;
+                                                             
+                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaDenpasar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaGianyar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaGianyar> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                     owl:NamedIndividual ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar> ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar> ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaGianyar> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaTabanan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaTabanan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                     owl:NamedIndividual ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaTabanan> ,
+                                                                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan> ;
+                                                            
+                                                            <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBesar
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBesar> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                     owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulKecil
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulKecil> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                     owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSedang
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulSedang> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DimensiKulkul> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                      owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangunpura
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangunpura> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mangunpura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mecaru
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Mecaru> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                owl:NamedIndividual ;
+                                                       
+                                                       rdfs:comment "Melakukan kegiatan kurban untuk mahkluk yang lebih rendah dari manusia"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Melahirkan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Melahirkan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           rdfs:label "GivingBirth"@en ,
+                                                                      "Melahirkan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Menikah
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Menikah> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        rdfs:label "Married"@en ,
+                                                                   "Menikah"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meninggal
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meninggal> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          rdfs:label "PassedAway"@en ,
+                                                                     "Meninggal"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meplaspas
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meplaspas> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          rdfs:comment "Melakukan upacara penyucian"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meprayascita
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Meprayascita> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                      owl:NamedIndividual ;
+                                                             
+                                                             rdfs:comment "Melakukan proses pembersihan untuk kesalahan atau kekotoran yang sedikit atau ringan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Negara
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Negara> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                owl:NamedIndividual ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana> ;
+                                                       
+                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana> ,
+                                                                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Negara> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ngaben
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ngaben> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#FungsiKulkul> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Pawongan> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TriHitaKarana> ,
+                                                                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                owl:NamedIndividual ;
+                                                       
+                                                       rdfs:label "Ngaben"@ban ,
+                                                                  "Cremation"@en ,
+                                                                  "Kremasi"@id ;
+                                                       
+                                                       rdfs:comment "Membakar mayat"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parum
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Parum> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                               <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                               owl:NamedIndividual ;
+                                                      
+                                                      rdfs:label "Parum"@ban ,
+                                                                 "Meeting"@en ,
+                                                                 "Pertemuan"@id ;
+                                                      
+                                                      owl:sameAs <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sangkep> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Plaspas
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Plaspas> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banten> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        rdfs:label "Plaspas"@ban ,
+                                                                   "Sucikan"@id ;
+                                                        
+                                                        rdfs:comment "Sucikan; mlaspasin umah, menyucikan rumah"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PohonPandan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PohonPandan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#MaterialKulkul> ,
+                                                                     <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PhysicalThing> ,
+                                                                     owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prayascita
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Prayascita> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Banten> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           rdfs:comment "Pembersihan untuk kesalahan atau kekotoran yang sedikit atau ringan"@id .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuriKlungkung
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuriKlungkung> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Puri> ,
+                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                       owl:NamedIndividual ;
+                                                              
+                                                              <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DesaAdatBendul> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ,
+                                                                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuriPemecutan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuriPemecutan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Puri> ,
+                                                                       <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sangkep
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sangkep> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        rdfs:label "Sangkep"@ban .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur> ,
+                                                                                                                    <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung> ;
+                                                           
+                                                           <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Semarapura> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Singaraja
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Singaraja> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#IbuKota> ,
+                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                   owl:NamedIndividual ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliUtara> ,
+                                                                                                                   <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng> ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isCapitalCityOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng> ;
+                                                          
+                                                          <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Singaraja> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Kabupaten> ,
+                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tempat> ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bali> ,
+                                                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat> ,
+                                                                                                                 <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaTabanan> ;
+                                                        
+                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#hasCapitalCity> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KotaTabanan> ;
+                                                        
+                                                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#isPartOf> <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan> .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TedunMekarya
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TedunMekarya> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Activity> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Ritual> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Upacara> ,
+                                                                      owl:NamedIndividual ;
+                                                             
+                                                             <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Images> "http://cbcp.oss.web.id/images/_DSC0043.jpg" .
+
+
+
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TukangKulkul
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#TukangKulkul> rdf:type <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Actor> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManMadeThing> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Orang> ,
+                                                                      <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Undagi> ,
+                                                                      owl:NamedIndividual .
+
+
+
+
+
+#################################################################
+#
+#    Annotations
+#
+#################################################################
+
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Sounds> rdfs:label "Sounds"@en ,
+                                                                  "Suara"@id .
+
+
+
+<http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RBEZ41r1iFFouw76lhXDsXx> rdfs:label "kulkul" .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBhuta>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulDewa>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulManusa>
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Badung>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Bangli>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Buleleng>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Denpasar>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Gianyar>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Jembrana>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Karangasem>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Klungkung>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#Tabanan>
+                      )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BhutaYadnya>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#DewaYadnya>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#ManusaYadnya>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PitraYadnya>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#RsiYadnya>
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDalem>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraDesa>
+                <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#PuraPuseh>
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliBarat>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliSelatan>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTengah>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliTimur>
+                        <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#BaliUtara>
+                      )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
