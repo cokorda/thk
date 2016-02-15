@@ -1,0 +1,60 @@
+@prefix : thk:#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix thk: <http://dpch.oss.web.id/Bali/KabKlungkung.owl#> .
+
+
+##################################################################################
+###  http://dpch.oss.web.id/Bali/KabKlungkung.owl#DesaAdatSemarapura
+
+<http://dpch.oss.web.id/Bali/KabKlungkung.owl#DesaAdatSemarapura> rdf:type thk:Desa ,
+                                                                           thk:Tempat ,
+                                                                           owl:NamedIndividual ;
+                                                                   
+                                                                   thk:P2_isPartOf thk:Bali ,
+                                                                                   thk:BaliTimur ,
+                                                                                   thk:Klungkung .
+
+                                                                                                                               
+                                                                                                                              
+##################################################################################
+###  http://dpch.oss.web.id/Bali/KabKlungkung.owl#BanjarAdatBendul
+
+<http://dpch.oss.web.id/Bali/KabKlungkung.owl#BanjarAdatBendul> rdf:type thk:Banjar ,
+                                                                        thk:Tempat ,
+                                                                        owl:NamedIndividual ;
+                                                                 
+                                                                 thk:P2_isPartOf 	thk:Bali ,
+                                                                 					thk:BaliTimur ,
+                                                                 					thk:DesaAdatSemarapura ,
+                                                                 					thk:Klungkung ;
+                                                                 
+                                                                 thk:P3_hasKulkul <http://dpch.oss.web.id/Bali/KabKlungkung.owl#KulkulBanjarAdatBendul> .
+        
+
+###################################################################################        
+###  http://dpch.oss.web.id/Bali/TriHitaKarana.owl#KulkulBanjarAdatBendul
+
+<http://dpch.oss.web.id/Bali/KabKlungkung.owl#KulkulBanjarAdatBendul> rdf:type thk:Kulkul ,
+                                                                                thk:KulkulBanjarAdat ,
+                                                                                thk:KulkulManusa ,
+                                                                                thk:Pawongan ,
+                                                                                thk:PhysicalThing ,
+                                                                                thk:TipeKulkul ,
+                                                                                thk:TriHitaKarana ,
+                                                                                owl:NamedIndividual ;
+                                                                       
+                                                                       thk:P3_isInstalledAt <http://dpch.oss.web.id/Bali/KabKlungkung.owl#BanjarAdatBendul> ;
+                                                                       
+                                                                       thk:P3_isUsedFor thk:Ngaben ,
+                                                                                        thk:Parum> ,
+                                                                                        thk:Sangkep> ;
+                                                                       
+                                                                       thk:P3_hasSound> thk:TuludAlon1> ,
+                                                                                        thk:TuludBanban1> ,
+                                                                                        thk:TuludSedeng2> .                                                         
+
+
