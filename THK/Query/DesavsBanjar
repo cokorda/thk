@@ -6,10 +6,14 @@ prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 SELECT DISTINCT *
 WHERE {
+  ?Kabupaten rdf:type thk:Kabupaten.
+  ?Kecamatan thk:P2_isPartOf ?Kabupaten.
+  ?Kecamatan rdf:type thk:Kecamatan.
+  ?Desa thk:P2_isPartOf ?Kecamatan.
   ?Desa rdf:type thk:Desa.
   ?Banjar thk:P2_isPartOf ?Desa.
-
+  ?Banjar rdf:type thk:Banjar.
 
 }
-
+order by ?Kabupaten
 LIMIT 25
