@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX type: <http://info.deepcarbon.net/schema/type#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
+
+SELECT DISTINCT *
+WHERE {
+  
+  ?Kecamatan thk:P2_isPartOf thk:Gianyar.
+  ?Kecamatan rdf:type thk:Kecamatan.
+  ?Desa thk:P2_isPartOf ?Kecamatan.
+  ?Desa rdf:type thk:Desa.
+  ?Banjar thk:P2_isPartOf ?Desa.
+  ?Banjar rdf:type thk:Banjar.
+
+}
+order by ?Kabupaten
+LIMIT 25
