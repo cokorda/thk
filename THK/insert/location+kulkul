@@ -1,0 +1,58 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>.
+
+
+##################################################################################
+#### Kecamatan
+#### thk:KecKesiman
+thk:NamaKecamatan rdf:type thk:Kecamatan,
+						   owl:NamedIndividual ;
+						   
+						   thk:P2_isPartOf thk:NamaKabupaten.
+
+##################################################################################
+#### DESA ADAT ATAU PAKRAMAN
+###  thk:DesaAdatSemarapura
+
+thk:NamaDesaAdat rdf:type thk:Desa ,
+                          owl:NamedIndividual ;
+                                                                   
+                           thk:P2_isPartOf 	thk:NamaKecamatan ,
+                           					thk:NamaKabupaten .
+                                                                                                                                                                                                                  
+                                                                                                                              
+##################################################################################
+###  BANJAR ADAT
+###  thk:BanjarAdatBendul
+
+thk:NamaBanjarAdat rdf:type thk:Banjar ,
+                            owl:NamedIndividual ;
+                                                                 
+                            thk:P2_isPartOf thk:NamaDesaAdat;
+                                                                 
+                            thk:P3_hasKulkul thk:KulkulNamaBanjarAdat .
+        
+
+###################################################################################        
+###  KULKUL BANJAR ADAT
+###  thk:KulkulBanjarAdatBendul
+
+thk:KulkulNamaBanjarAdat rdf:type thk:KulkulBanjarAdat ,
+                                    :NamedIndividual ;
+                           
+                           thk:P3_hasSound thk:TuludAlon1 ,
+                                           thk:TuludSedeng2 .                                               
+
+#################################################################################
+###  thk:Meninggal
+
+thk:Meninggal rdf:type thk:ManusaYadnya ,
+                       :NamedIndividual ;
+                                          
+              thk:P5_isUsing thk:Tulud2 ,
+                             thk:TuludAlon1 .
+

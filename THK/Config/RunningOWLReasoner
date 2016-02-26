@@ -1,0 +1,3 @@
+#### RUNNING FUSEKI WITH OWL REASONER
+
+java -cp lib/jena-sdb-3.0.1.jar:fuseki-server.jar org.apache.jena.fuseki.FusekiCmd --config=config-tdb-all.ttl
