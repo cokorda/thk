@@ -5,7 +5,7 @@ prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 DELETE DATA
 {
-thk:KulkulBanjarAdatBendul thk:TuludSedeng2 thk:Parum
+thk:KulkulBanjarAdatBendul thk:TuludAlon1 thk:Sangkep;
+    thk:TuludAlon1 thk:Parum.
 
- 
 }
