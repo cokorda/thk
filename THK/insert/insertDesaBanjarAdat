@@ -5,8 +5,8 @@ prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 INSERT DATA
 {
-thk:BanjarAdatUbudKaja a thk:BanjarAdat;
+thk:BanjarAdatUbudKaja a thk:Banjar;
     thk:P2_isPartOf thk:DesaPakramanUbud.
-thk:BanjarAdatUbudTengah a thk:BanjarAdat;
+thk:BanjarAdatUbudTengah a thk:Banjar;
     thk:P2_isPartOf thk:DesaPakramanUbud.
 }
