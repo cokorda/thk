@@ -5,4 +5,8 @@ prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 INSERT DATA
 {
-thk:Nyepi a thk:ManusaYadnya}
+thk:BanjarAdatUbudKaja a thk:BanjarAdat;
+    thk:P2_isPartOf thk:DesaPakramanUbud.
+thk:BanjarAdatUbudTengah a thk:BanjarAdat;
+    thk:P2_isPartOf thk:DesaPakramanUbud.
+}
