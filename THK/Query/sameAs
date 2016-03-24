@@ -1,15 +1,34 @@
+## This query is to list the name of banjar, the sound, and activities that used the sound.
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
+
+SELECT DISTINCT *
+WHERE {
+  ?Banjar thk:hasKulkul ?KulkulBanjar.
+  ?KulkulBanjar a thk:KulkulBanjar;
+thk:hasSound ?Sound;
+   thk:isUsedFor ?Activity. 
+ ?Sound thk:isFor ?Activity.
+  OPTIONAL {?Activity owl:sameAs ?Activity2}
+}
+LIMIT 25
+
+
+###############################################
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 SELECT DISTINCT *
-WHERE
-{
-  ?Banjar a thk:Banjar;
-  thk:hasSound ?Sound.
-?Sound thk:isUsedFor ?Activities.
-OPTIONAL
-{
-?Activities owl:sameAs ?Activities2.}
+WHERE {
+  ?Banjar thk:hasKulkul ?KulkulBanjar.
+  ?KulkulBanjar a thk:KulkulBanjar;
+thk:hasSound ?Sound.
+?Sound thk:isFor thk:Parum. 
+?KulkulBanjar thk:isUsedFor thk:Parum
+    OPTIONAL {thk:Parum owl:sameAs thk:Sangkep}
 }
+LIMIT 25

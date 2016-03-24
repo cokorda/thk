@@ -5,10 +5,10 @@ prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
 
 SELECT DISTINCT *
 WHERE {
-  ?Banjar thk:P2_hasKulkul ?KulkulBanjar.
-  ?KulkulBanjar a thk:KulkulBanjarAdat;
-thk:P3_hasSound ?Sound.
-  ?Sound thk:P3_isUsedFor ?Activity. 
- 
+  ?Banjar thk:hasKulkul ?KulkulBanjar.
+  ?KulkulBanjar a thk:KulkulBanjar;
+thk:hasSound ?Sound;
+   thk:isUsedFor ?Activity. 
+ ?Sound thk:isFor ?Activity.
 }
 LIMIT 25
