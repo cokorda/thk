@@ -1,36 +1,45 @@
+<?php
+    /**
+     * Making a SPARQL SELECT query
+     *
+     * This example creates a new SPARQL client, pointing at the
+     * dbpedia.org endpoint. It then makes a SELECT query that
+     * returns all of the countries in DBpedia along with an
+     * english label.
+     *
+     * Note how the namespace prefix declarations are automatically
+     * added to the query.
+     *
+     * @package    EasyRdf
+     * @copyright  Copyright (c) 2009-2013 Nicholas J Humfrey
+     * @license    http://unlicense.org/
+     */
+
+    set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
+    require_once "EasyRdf.php";
+    require_once "html_tag_helpers.php";
+
+    // Setup some additional prefixes for DBpedia
+    EasyRdf_Namespace::set('category', 'http://dbpedia.org/resource/Category:');
+    EasyRdf_Namespace::set('dbpedia', 'http://dbpedia.org/resource/');
+    EasyRdf_Namespace::set('dbo', 'http://dbpedia.org/ontology/');
+    EasyRdf_Namespace::set('dbp', 'http://dbpedia.org/property/');
+EasyRdf_Namespace::set('thk', 'http://dpch.oss.web.id/Bali/TriHitaKarana.owl#');
+
+    $client = new EasyRdf_Sparql_Client('http://dpch.oss.web.id:3030/thk/update');
+?>
 <html>
-  <body>
+<head>
+  <title>EasyRdf Basic Sparql Example</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1>EasyRdf Basic Sparql Example</h1>
 
-  <?php
-  include_once('semsol/ARC2.php'); /* ARC2 static class inclusion */
+<?php
+    $client->update(
+        'INSERT DATA {thk:DesaAdatPenamparan22 a thk:Desa}');
+?>
 
-
-  $dbpconfig = array(
-  "remote_store_endpoint" => "http://dpch.oss.web.id:3030/thk/update",
-   );
-
-  $store = ARC2::getRemoteStore($dbpconfig);
-
-  if ($errs = $store->getErrors()) {
-     echo "<h1>getRemoteSotre error<h1>" ;
-  }
-
-  $query = '
-@prefix owl: <http://www.w3.org/2002/07/owl#> 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-@prefix xml: <http://www.w3.org/XML/1998/namespace> 
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-@prefix thk: <http://dpch.oss.web.id/Bali/TriHitaKarana.owl#>
-
-INSERT DATA {
-#########################
-## insert the data
-
-}
-';
-
-
-  ?>
-  </body>
+</body>
 </html>
