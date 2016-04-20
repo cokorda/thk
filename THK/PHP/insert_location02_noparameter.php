@@ -12,9 +12,9 @@
 
 
 
-    set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
+ 	set_include_path(get_include_path() . PATH_SEPARATOR . '../easyrdf/lib/');
     require_once "EasyRdf.php";
-    require_once "html_tag_helpers.php";
+    require_once "../easyrdf/examples/html_tag_helpers.php";
 
     // Setup prefix
 EasyRdf_Namespace::set ('rdf' , 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
