@@ -9,6 +9,6 @@ WHERE {
   ?KulkulBanjar a thk:KulkulBanjar;
 thk:hasSound ?Sound;
    thk:isUsedFor ?Activity. 
- ?Sound thk:isFor ?Activity.
+ ?Sound thk:isSoundFor ?Activity.
 }
 LIMIT 25
